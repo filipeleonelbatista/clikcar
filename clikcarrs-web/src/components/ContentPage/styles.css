@@ -1,0 +1,115 @@
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F2FE;
+    margin-left: 25rem;
+    height: fit-content;
+}
+
+.content .nav{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    justify-content: flex-end;
+
+    padding: 2.4rem 2.4rem 0.8rem 2.4rem;    
+}
+
+.content .nav .welcome{
+    font: 1.6rem Poppins;
+    font-weight: 700;
+    color: #A1A8B4;  
+    margin: 0 1.6rem;
+}
+
+.content .nav .user-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;   
+    border-radius: 50%;
+
+    color: #A1A8B4;  
+    margin: 0 0.8rem;
+    transition: 0.3s;
+}
+.content .nav .user-icon:hover{
+    background-color: #C4C4C4;
+    color: #FFF;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+}
+.content .nav .user-icon:active{
+    background-color: #C4C4C4;
+    color: #FFF;
+    -webkit-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.75);
+}
+
+.content .nav .notification{
+    display: flex;
+ }
+
+.content .nav .notification-icon{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;      
+    border-radius: 50%;
+
+    color: #A1A8B4; 
+    margin: 0 0.8rem;
+    transition: 0.3s;
+}
+
+.content .nav .notification .notification-popup{     
+    position: absolute;
+    top: 31px;
+    right: 45px;
+
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #62AA31;
+    transition: 0.3s;
+}
+
+.content .nav .notification .notification-icon:hover{
+    background-color: #C4C4C4;
+    color: #FFF;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+}
+
+.content .nav .notification .notification-icon:active{
+    background-color: #C4C4C4;
+    color: #FFF;
+    -webkit-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.75);
+}
+
+.content .page-container{    
+    display: flex;
+    flex-direction: column;
+    
+    padding: 0.8rem 2.4rem; 
+}
+
+.content .page-container h1{
+    font: 3.6rem Poppins;
+    font-weight: 700;
+    color: #1E1E26;  
+    margin: 1.6rem;
+    
+}
