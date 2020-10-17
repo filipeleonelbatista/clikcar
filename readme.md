@@ -1,5 +1,5 @@
 <p align="center">
-<a href="https://clikcarrs.com.br"><img src="./assets/logo.png"></a>
+<a href="https://clikcarrs.com.br"><img src="./.github/logo.png"></a>
 </p>
 <p align="center">
 <strong>Sistema de gestão para empresas </strong><br>
