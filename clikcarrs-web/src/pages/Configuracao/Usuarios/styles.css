@@ -1,0 +1,104 @@
+.user-container{
+    margin: 0.6rem;
+    padding: 1.6rem;
+    border-radius: 1.6rem;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: row;
+}
+
+.user-container .user-photo{
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+    margin: 0 1.6rem 0 0;
+}
+
+.user-container .user-photo img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 1.6rem;
+}
+
+.user-data{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.user-data .user-data-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.user-data .user-data-container .name{
+    font-size: large;
+    font-weight: 700;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+}  
+.user-data .user-data-container .name .status{
+    margin: 0 0.8rem;
+    font-size: small;
+    color: #FFF;
+    padding: 0.3rem 0.8rem;
+    border-radius: 1.8rem;
+}
+
+.user-data .user-data-container .name .status.active{
+    background-color: #62AA31;
+}
+
+.user-data .user-data-container .name .status.inactive{
+    background-color: #DF4147;
+}
+
+.user-data .user-data-container .address{
+    margin: 1.6rem 0;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.user-data .user-data-container .contact{
+    display: flex;
+    flex-direction: row;
+}
+
+.user-data .user-data-container .contact .contact-group{
+    margin: 0 0.3rem;
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.user-data .user-data-container .contact .contact-group .title{
+    font-size: small;
+    font-weight: 700;
+}
+
+.user-data .user-data-container .contact .contact-group .contact-data{
+    display: flex;
+    flex-direction: row;
+}
+
+.user-data .user-data-container .contact .contact-group .text-contact{
+    margin: 0 0.8rem 0 0;
+}
+.user-data .user-data-container .contact .contact-group .text-contact a{
+    text-decoration: none;
+}
+
+.user-data .user-data-container .birthday .title{
+    font-size: small;
+    font-weight: 700;
+}
+
+.user-data .actions{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

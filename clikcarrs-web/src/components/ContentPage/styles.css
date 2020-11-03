@@ -13,19 +13,55 @@
     flex-direction: row;
     
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
 
     padding: 2.4rem 2.4rem 0.8rem 2.4rem;    
 }
 
-.content .nav .welcome{
+
+.content .nav .nav-container{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    justify-content: flex-end;   
+}
+
+.content .nav .submenu {
+    display: flex;
+    flex-direction: row;
+}
+
+.content .nav .submenu .submenu-list .submenu-item{    
+    font: 1.6rem Poppins;
+    font-weight: 700;
+    color: #A1A8B4;  
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: 0.3s
+} 
+
+.content .nav .submenu .submenu-list .submenu-item:hover{    
+    color: #1E1E26; 
+}
+
+.content .nav .submenu .submenu-list .submenu-item.active {    
+    color: #1E1E26;
+    transition: 0.3s
+}
+
+.content .nav .submenu .submenu-list .submenu-item.active:hover {    
+    color: #A1A8B4; 
+}
+
+.content .nav  .nav-container .welcome{
     font: 1.6rem Poppins;
     font-weight: 700;
     color: #A1A8B4;  
     margin: 0 1.6rem;
 }
 
-.content .nav .user-icon{
+.content .nav .nav-container .user-icon{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,14 +74,14 @@
     margin: 0 0.8rem;
     transition: 0.3s;
 }
-.content .nav .user-icon:hover{
+.content .nav .nav-container  .user-icon:hover{
     background-color: #C4C4C4;
     color: #FFF;
     -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
 }
-.content .nav .user-icon:active{
+.content .nav .nav-container .user-icon:active{
     background-color: #C4C4C4;
     color: #FFF;
     -webkit-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.75);
@@ -53,11 +89,11 @@
     box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.75);
 }
 
-.content .nav .notification{
+.content .nav .nav-container .notification{
     display: flex;
  }
 
-.content .nav .notification-icon{ 
+.content .nav .nav-container .notification-icon{ 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,7 +107,7 @@
     transition: 0.3s;
 }
 
-.content .nav .notification .notification-popup{     
+.content .nav .nav-container .notification .notification-popup{     
     position: absolute;
     top: 31px;
     right: 45px;
@@ -83,7 +119,7 @@
     transition: 0.3s;
 }
 
-.content .nav .notification .notification-icon:hover{
+.content .nav .nav-container .notification .notification-icon:hover{
     background-color: #C4C4C4;
     color: #FFF;
     -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
@@ -91,7 +127,7 @@
     box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
 }
 
-.content .nav .notification .notification-icon:active{
+.content .nav .nav-container .notification .notification-icon:active{
     background-color: #C4C4C4;
     color: #FFF;
     -webkit-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.75);

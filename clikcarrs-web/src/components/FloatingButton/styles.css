@@ -19,7 +19,7 @@
 }
 
 .floating-container:hover{
-    background-color: #417221;
+    background-color: #70c03b;
     -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);

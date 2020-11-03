@@ -7,10 +7,21 @@ const upload = multer(multerConfig);
 const routes = express.Router();
 
 import DummyController from './controller/DummyController';
+import UsuarioController from './controller/UsuarioController';
 import InvestidorController from './controller/InvestidorController';
 
 
 routes.get('/teste', DummyController.index);
+
+routes.get('/usuarios', UsuarioController.index);
+routes.get('/usuario/:id', UsuarioController.show);
+
+routes.delete('/usuarios/:id', UsuarioController.remove);
+
+routes.post('/usuarios', upload.fields([
+    { name: 'avatar', maxCount: 1 },
+]), UsuarioController.create);
+
 
 routes.get('/investidores', InvestidorController.index);
 routes.get('/investidor/:id', InvestidorController.show);

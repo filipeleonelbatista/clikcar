@@ -11,6 +11,7 @@ import Veiculos from './pages/Veiculos';
 import Locacao from './pages/Locacao';
 import Configuracao from './pages/Configuracao';
 import Usuarios from './pages/Configuracao/Usuarios';
+import AddUsuario from './pages/Configuracao/Usuarios/Adicionar';
 import AddInvestidor from './pages/Investidores/AddInvestidor';
 import EditInvestidor from './pages/Investidores/EditInvestidor';
 
@@ -28,8 +29,9 @@ function Routes() {
                 <Route path="/Financeiro" component={Financeiro} />
                 <Route path="/Veiculos" component={Veiculos} />
                 <Route path="/Locacao" component={Locacao} />
-                <Route path="/Configuracao" component={Configuracao} />
-                <Route path="/Configuracao/Usuarios" component={Usuarios} />
+                <Route path="/Configuracao" exact component={Configuracao} />
+                <Route path="/Configuracao/Usuarios" exact component={Usuarios} />
+                <Route path="/Configuracao/Usuarios/Adicionar" exact component={AddUsuario} />
             </Switch>
         </BrowserRouter>
     )
